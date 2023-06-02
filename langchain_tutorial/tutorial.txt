@@ -1,0 +1,18 @@
+LinkedIn Post from Andrew Ng:
+June 1, 2023
+
+Thrilled to announce: 3 new Generative AI courses! Check them out here: https://lnkd.in/gQdegxe2
+
+I. Building Systems with the ChatGPT API, taught by OpenAI's Isa Fulford and me: Go beyond individual prompts, and learn to build complex applications that use multiple API calls to an LLM. Also learn to evaluate an LLM's outputs for safety and accuracy, and drive iterative improvements. https://lnkd.in/gaJ7krqx
+
+II. LangChain for LLM Application Development, taught by LangChain's CEO Harrison Chase and me: Learn this powerful open-source tool for building applications using LLMs, including memory for chatbots, Question answering over a doc, and an LLM agent that can decide what action to take next. https://lnkd.in/gzzDqTDr
+
+III. How Diffusion Models Work, taught by Lamini's CEO Sharon Zhou: Learn the technical details of how diffusion models - which power Midjourney, DALL·E, and Stable Diffusion - works. You’ll also end up with working code to generate your own video game sprites in a Jupyter notebook! https://lnkd.in/gBqUKuwV.
+
+All of these courses are free for a limited time, and each can be completed in around 1-1.5 hours. I hope you enjoy them. Also, please help me spread the word and encourage others to sign up too! 
+
+
+https://www.linkedin.com/posts/andrewyng_thrilled-to-announce-3-new-generative-ai-activity-7069751645164765185-5rdB?utm_source=share&utm_medium=member_desktop
+
+
+
