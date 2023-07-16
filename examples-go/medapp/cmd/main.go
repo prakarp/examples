@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"medapp/pkg/outpatient"
+	"github.com/prakarp/examples/examples-go/medapp/pkg/outpatient"
 )
 
 func main() {
