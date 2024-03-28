@@ -50,9 +50,9 @@
 - Ensure text is legibly sized, typically not going below 12px on standard (1920x1080) screens. Design your application to be fully functional and readable at various zoom levels.
 - Ensure interactive elements like buttons and form controls are of a sufficient size to be easily clickable.
 - Use responsive CSS frameworks or techniques to ensure your application looks good on all devices, from desktops to smartphones.
-- Adopt universal design principles to ensure your application is accessible to as wide an audience as possible.
-- Users should always be aware of their current location within the application. Name files in a way that is descriptive and helpful to the user.
-- Ensure all communications are clear and informative, guiding users on the necessary actions with precision.
+- Adopt universal design principles to ensure your application is accessible to as wide an audience as possible. 
+- Users should always be aware of their current location within the application. Name files in a way that is descriptive and helpful to the user. Example: when a user downloads content from the website, the default filename should be appropriately chosen; i.e. ICICI-stmt-2024-07.pdf is preferable to statement.pdf)
+- Ensure all communications are clear and informative, guiding users on the necessary actions with precision. Grammar correctness is important. 
 - Make clickable elements visually distinct to accommodate users who may click on arbitrary locations.
 - When designing UI elements, include patterns or shapes to ensure information is accessible to color-blind users. This practice helps avoid reliance on color as the sole means of conveying information.
 
