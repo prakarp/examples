@@ -1,7 +1,10 @@
 # Project Setup and Code Style
 
-- **Use Angular CLI for project setup** to ensure consistency and adherence to best practices. For code style and conventions, refer to the Angular Style Guide.
-- Maintain reusable Angular components in a separate project within your organization, possibly with a demo application for showcasing these components. Version these components separately to facilitate their use across multiple projects.
+There are style guides for many popular web frontend frameworks like Angular and React. 
+For Angular: https://angular.io/guide/styleguide 
+For React: There are many: AirBnB (https://github.com/airbnb/javascript/tree/master/react),  
+
+In addition to the style guides,your project should maintain the reusable components in a separate project within your organization, possibly with a demo application for showcasing these components. Version these components separately to facilitate their use across multiple projects.
 
 # Documentation and Comments
 
@@ -11,34 +14,38 @@
 
 # User Interface 
 
-## Stability and Responsiveness
+## Usability
 
-- When a page loads in a Single Page Application (SPA), ensure components load content asynchronously without shifting position on the screen. Maintain the size and relative position of components across versions to avoid disorienting users.
-
-## Form Interaction
-
-- Avoid initializing form fields after the page has loaded to prevent disrupting user input. Group related fields in forms and consider a two-dimensional layout for field groups (i.e. not just from top to bottom. Top-to-bottom, and left-to-right).
-- Ensure action buttons like "Submit" or "Cancel" are easily accessible and do not require excessive scrolling.
-- Use consistent field widths based on the most common input lengths. This approach balances uniformity and practicality. (Example:A string field with a max length of 50, but common to see 25 characters. Go for 25 as the visible field width with horizontal scrolling. At the same time, if the next field is a number, don't make it a 25-digit field, it should only have a field width applicable to the number's valid range. If another string field is present with 10 characters, it may make sense to make the numeric field also to have 10 characters even if that will not be used. You are going for some uniformity of the field widths, as well as keeping as small a size as possible).
-- Select the field names/labels appropriately. Must always have a help button right next to the field or for the form, to help the user fill out the form. Consider multiple tabbed form.
-- It takes time and effort for the user to fill out a form. Don't make them fill it out and then ask them to do something else somewhere else before submitting this. You should think about a workflow and guide the user through it. If the form cannot be accepted, don't make the user go through the trouble of filling it out. 
-
-## Toasts and Notifications
-
-- Ensure toasts do not obstruct clickable content. Consider providing a history of toasts for users who wish to view missed notifications.
-
-## User Action Feedback
-
-- Never block user actions during page rendering. If an action is not available, prefer to disable (grey out) the control rather than hiding it, to maintain the layout's stability.
+- Whenever possible, keep all controls visible at all times. It is ok to keep those disabled if necessary. For example, there are some user interfaces that require you two swipe from left, right, top, etc. with nothing on the screen telling the user that they could do those gestures. Those are typically not good ones for a web user interface even though they may be acceptable for a mobile phone interface. Web-controls are supposed to be just click and type. Do not expect the users to know dragging or double-clicking. Note that they have more accessibility issues than just simple click and type.
+- The user should not be asked or requrired to read a manual about how to use a web interface through gestures. Any instruction that the user may need must be visible on the page right there.
 
 # Performance and Optimization
+
 - Implement lazy loading for Angular components to improve startup time.
 - Use TypeScript's type system and linters to catch errors early and identify deprecated code.
 - Update or upgrade dependencies in `package.json` in a separate branch to thoroughly test changes. For each third-party library, maintain a set of test cases to ensure compatibility and stability.
 
+## Page Layout 
+
+- When a page loads in a Single Page Application (SPA), ensure components load content asynchronously without shifting position on the screen. 
+- Maintain the size and relative position of components across versions to avoid disorienting users.
+- Never block user actions during page rendering. If an action is not available, prefer to disable (grey out) the control rather than hiding it, to maintain the layout's stability.
+- - Ensure toasts do not obstruct clickable content. Consider providing a history of toasts for users who wish to view missed notifications.
+
+
+## Form Interaction
+
+- Avoid initializing form fields after the page has loaded to prevent disrupting user input. Group related fields in forms and consider a two-dimensional layout for field groups (i.e. not just from top to bottom. Top-to-bottom, and left-to-right).
+- Ensure action buttons like "Submit" or "Cancel" are easily accessible and do not require excessive scrolling. Typically they are best placed at the TOP of the page and should be always visible.
+- Use consistent field widths based on the most common input lengths. This approach balances uniformity and practicality. (Example:A string field with a max length of 50, but common to see 25 characters. Go for 25 as the visible field width with horizontal scrolling. At the same time, if the next field is a number, don't make it a 25-digit field, it should only have a field width applicable to the number's valid range. If another string field is present with 10 characters, it may make sense to make the numeric field also to have 10 characters even if that will not be used. You are going for some uniformity of the field widths, as well as keeping as small a size as possible).
+- Select the field names/labels appropriately. Must always have a help button right next to the field or for the form, to help the user fill out the form. Consider multiple tabbed form.
+- It takes time and effort for the user to fill out a form. Don't make them fill it out and then ask them to do something else somewhere else before submitting this. You should think about a workflow and guide the user through it. If the form cannot be accepted, don't make the user go through the trouble of filling it out. 
+
+
 ## Feedback Collection
 
 - Collect feedback on user interfaces from a broad audience but ensure the development team aligns on changes that best serve the user experience. Limit the number of changes to reduce the need for excessive testing.
+- Always think about what the end user would feel like. Using animations  
 
 # Internationalization (i18n) and Localization
 
@@ -55,5 +62,4 @@
 - Ensure all communications are clear and informative, guiding users on the necessary actions with precision. Grammar correctness is important. 
 - Make clickable elements visually distinct to accommodate users who may click on arbitrary locations.
 - When designing UI elements, include patterns or shapes to ensure information is accessible to color-blind users. This practice helps avoid reliance on color as the sole means of conveying information.
-
 
