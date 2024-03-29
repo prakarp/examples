@@ -19,7 +19,7 @@ In addition to the style guides,your project should maintain the reusable compon
 - Whenever possible, keep all controls visible at all times. It is ok to keep those disabled if necessary. For example, there are some user interfaces that require you two swipe from left, right, top, etc. with nothing on the screen telling the user that they could do those gestures. Those are typically not good ones for a web user interface even though they may be acceptable for a mobile phone interface. Web-controls are supposed to be just click and type. Do not expect the users to know dragging or double-clicking. Note that they have more accessibility issues than just simple click and type.
 - The user should not be asked or requrired to read a manual about how to use a web interface through gestures. Any instruction that the user may need must be visible on the page right there.
 
-# Performance and Optimization
+## Performance and Optimization
 
 - Implement lazy loading for Angular components to improve startup time.
 - Use TypeScript's type system and linters to catch errors early and identify deprecated code.
@@ -45,7 +45,6 @@ In addition to the style guides,your project should maintain the reusable compon
 ## Feedback Collection
 
 - Collect feedback on user interfaces from a broad audience but ensure the development team aligns on changes that best serve the user experience. Limit the number of changes to reduce the need for excessive testing.
-- Always think about what the end user would feel like. Using animations  
 
 # Internationalization (i18n) and Localization
 
